@@ -89,9 +89,9 @@ def exp_type_to_hyperparameters(args):
     """
 
     params = {
-        'filters': [],
-        'kernels': [],
-        'hidden': []
+        'filters': [[8, 16], [4, 12]],
+        'kernels': [[3, 4]],
+        'hidden': [[20, 15]]
     }
 
     return params
@@ -203,7 +203,7 @@ def execute_exp(args=None):
                       'n_classes': 10}
 
     # Build network: you must provide your own implementation
-    model = None  # TODO
+    model = build_parallel_functional_model(**network_params)  # TODO
 
     # Output file base and pkl file
     fbase = generate_fname(args, args_str)

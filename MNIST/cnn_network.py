@@ -40,7 +40,7 @@ def build_sequential_model(conv_filters,
     # compile the model
     model.compile(loss='sparse_categorical_crossentropy',
                   optimizer=opt,
-                  metrics=['categorical_accuracy'])
+                  metrics=['sparse_categorical_accuracy'])
 
     # Generate an ASCII representation of the architecture
     print(model.summary())
@@ -82,7 +82,7 @@ def build_functional_model(conv_filters,
     # compile the model
     model.compile(loss='sparse_categorical_crossentropy',
                   optimizer=opt,
-                  metrics=['categorical_accuracy'])
+                  metrics=['sparse_categorical_accuracy'])
 
     # Generate an ASCII representation of the architecture
     print(model.summary())
@@ -135,7 +135,7 @@ def build_parallel_functional_model(conv_filters,
     # compile the model
     model.compile(loss='sparse_categorical_crossentropy',
                   optimizer=opt,
-                  metrics=['categorical_accuracy'])
+                  metrics=['sparse_categorical_accuracy'])
 
     # Generate an ASCII representation of the architecture
     print(model.summary())

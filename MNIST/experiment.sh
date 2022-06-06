@@ -18,10 +18,10 @@
 #SBATCH --time=15:00
 #SBATCH --job-name=MNIST_exp
 
-#SBATCH --mail-user=<your email>
+#SBATCH --mail-user=jay.c.rothenberger@ou.edu
 #SBATCH --mail-type=ALL
-#SBATCH --chdir=/home/<your directory>/MNIST
-#SBATCH --array=[0-0]
+#SBATCH --chdir=/home/jroth/MNIST
+#SBATCH --array=[0-1]
 #
 #################################################
 # Do not change this line unless you have your own python/tensorflow/keras set up

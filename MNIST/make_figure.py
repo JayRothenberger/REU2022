@@ -48,7 +48,7 @@ def figure_metric_epochs(metric, name, fname, filebase=''):
     """
     results = read_all_pkl('results/', filebase)
 
-    legend = [f'experiment {result["args"].exp}' for result in results]
+    legend = [f'experiment {result["args"].filters}' for result in results]
 
     for result in results:
         # plot the metric v.s. epochs for each model
@@ -59,7 +59,6 @@ def figure_metric_epochs(metric, name, fname, filebase=''):
     plt.title(f'{name} as a Function of Epochs')
     plt.legend(legend)
     plt.xlabel('epochs')
-    plt.ylabel('accuracy')
 
     # save the figure
     fig = plt.gcf()
