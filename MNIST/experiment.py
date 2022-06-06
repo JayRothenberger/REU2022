@@ -83,7 +83,7 @@ def exp_type_to_hyperparameters(args):
     """
     convert the type of experiment to the appropriate hyperparameter grids
 
-    :param args: the CLA for the experiment.  Expects an element 'exp_type' \in {'BLSTM', 'GRU'}
+    :param args: the CLA for the experiment.
 
     @return a dictionary of hyperparameters
     """
